@@ -4,7 +4,6 @@ This app uses https://github.com/hphde/yeelight-shell-scripts
 It's a simple GUI for it
 
 
-
 Yeelight Shell Scripts
 
 Control Xiaomi Mi Yeelight (RGB) with shell scripts. Should work under any recent Linux with a `bash` or `zsh` - sorry, don't know if that works under Windows/CygWin or Macos - you might need to rewrite the last line in the `yeelight.sh` script (e.g. by pipeing the output to `netcat`).
@@ -93,7 +92,10 @@ Make sure the scripts are executable (`chmod +x *.sh`) and either you are using 
 
 I have setup different scenes as devices for the same light. There is a `bedroom` device which can be switched on/off and use the dim feature - this is just a normal setup. And there is also a `sleep` and a `rainbow` device that addresses the same light to apply this scenes.
 
-`yeelight-disco.sh` is a wrapper that only accepts one value - I use `${intensity.percent}` from HA-Bridge. There is some math done with that value to fit into the 2-99% range (Strange: I can't tell Alexa to use 1 or 100%) and still have some 'disco-speed'. Adjust to your needs.
+`yeelight-disco.sh` is a wrapper that only accepts one value - I use `${intensity.percent}` from HA-Bridge. There is some math done with that value to fit into the 2-99% range (Strange: I can't tell Alexa to use 1 or 100%) and still have some 'disco-speed'. Adjust to your needs.# Planning
+
+ - Turn this into a GNOME extension
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzOTU3NDUzLC00MDM0Mjc1MjRdfQ==
+eyJoaXN0b3J5IjpbMTEwNDUzNjg4Myw5MzM5NTc0NTNdfQ==
 -->
